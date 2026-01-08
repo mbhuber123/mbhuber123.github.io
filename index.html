@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CATT Codex training</title>
+    <title>Innovator & Research Leader | Professional Webpage</title>
     <style>
       :root {
         color-scheme: light;
-        --bg: #f8f7f4;
-        --text: #1b1b1b;
-        --muted: #4b5563;
-        --accent: #2257ff;
+        --bg: #f4f5f8;
+        --text: #101828;
+        --muted: #475467;
+        --accent: #1d4ed8;
+        --accent-soft: #e0e7ff;
         --card: #ffffff;
+        --border: rgba(15, 23, 42, 0.12);
       }
 
       * {
@@ -27,24 +29,26 @@
       }
 
       header {
-        padding: 2.5rem 1.5rem 2rem;
-        background: linear-gradient(135deg, #eef1ff, #f8f7f4 70%);
+        padding: 3.5rem 1.5rem 3rem;
+        background: linear-gradient(135deg, #eef2ff, #f4f5f8 70%);
       }
 
       main {
-        max-width: 960px;
+        max-width: 1080px;
         margin: 0 auto;
         padding: 0 1.5rem 4rem;
       }
 
       .hero {
         display: grid;
-        gap: 1.5rem;
+        gap: 1.75rem;
+        align-items: center;
       }
 
       .hero h1 {
-        font-size: clamp(2rem, 3vw, 3rem);
+        font-size: clamp(2.4rem, 3.4vw, 3.5rem);
         margin: 0;
+        letter-spacing: -0.02em;
       }
 
       .hero p {
@@ -53,33 +57,103 @@
         font-size: 1.1rem;
       }
 
-      .hero a {
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .button {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
-        color: var(--accent);
-        font-weight: 600;
+        justify-content: center;
+        padding: 0.75rem 1.4rem;
+        border-radius: 999px;
         text-decoration: none;
+        font-weight: 600;
+        border: 1px solid transparent;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+
+      .metric {
+        background: var(--card);
+        padding: 1.25rem;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+      }
+
+      .metric h3 {
+        margin: 0 0 0.35rem;
+        font-size: 1.3rem;
+      }
+
+      .section-title {
+        margin: 3rem 0 1rem;
+        font-size: 1.6rem;
       }
 
       .content-grid {
         display: grid;
         gap: 1.5rem;
-        margin-top: 2.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       }
 
       .card {
         background: var(--card);
         padding: 1.5rem;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
       }
 
       .card h2 {
         margin-top: 0;
         margin-bottom: 0.75rem;
         font-size: 1.2rem;
+      }
+
+      .pill-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .pill {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .callout {
+        background: #ffffff;
+        border-left: 4px solid var(--accent);
+        padding: 1.5rem;
+        border-radius: 14px;
+        box-shadow: 0 12px 25px rgba(15, 23, 42, 0.06);
+      }
+
+      .callout p {
+        margin: 0;
+        color: var(--muted);
       }
 
       footer {
@@ -92,45 +166,148 @@
   <body>
     <header>
       <main class="hero">
-        <p>Welcome to the training hub</p>
-        <h1>CATT Codex training</h1>
+        <p>Research leader · Mentor · Strategic advisor</p>
+        <h1>
+          I help organizations turn emerging research into bold, market-shaping innovations.
+        </h1>
         <p>
-          This is a simple, focused landing page for the CATT Codex training program.
-          Replace the placeholder text below with details about sessions, curriculum,
-          and resources as they become available.
+          From pioneering studies and applied experimentation to executive coaching and
+          advisory partnerships, I build the insight, teams, and momentum needed to solve
+          complex problems and create lasting impact.
         </p>
-        <a href="#overview">View the overview</a>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work</a>
+          <a class="button secondary" href="#connect">Start a conversation</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <h3>Research programs</h3>
+            <p>Led multi-year initiatives blending rigorous inquiry with real-world pilots.</p>
+          </div>
+          <div class="metric">
+            <h3>Mentorship impact</h3>
+            <p>Guided cross-functional teams and emerging leaders through high-stakes change.</p>
+          </div>
+          <div class="metric">
+            <h3>Consulting reach</h3>
+            <p>Advised startups, nonprofits, and enterprise partners on innovation strategy.</p>
+          </div>
+        </div>
       </main>
     </header>
 
     <main>
-      <section id="overview" class="content-grid">
-        <article class="card">
-          <h2>Training overview</h2>
+      <section id="work">
+        <h2 class="section-title">Signature focus areas</h2>
+        <div class="content-grid">
+          <article class="card">
+            <h2>Research & innovation</h2>
+            <p>
+              I design research roadmaps, convene expert networks, and translate findings
+              into actionable prototypes that align with mission-critical goals.
+            </p>
+            <div class="pill-group">
+              <span class="pill">Applied research</span>
+              <span class="pill">Experiment design</span>
+              <span class="pill">Innovation labs</span>
+            </div>
+          </article>
+          <article class="card">
+            <h2>Mentoring & leadership</h2>
+            <p>
+              I mentor executives and rising talent, helping them build strategic clarity,
+              resilient teams, and cultures that sustain innovation at scale.
+            </p>
+            <div class="pill-group">
+              <span class="pill">Executive coaching</span>
+              <span class="pill">Team facilitation</span>
+              <span class="pill">Talent development</span>
+            </div>
+          </article>
+          <article class="card">
+            <h2>Consulting & advisory</h2>
+            <p>
+              I partner with organizations to shape new ventures, investment theses, and
+              go-to-market strategies grounded in research and customer insight.
+            </p>
+            <div class="pill-group">
+              <span class="pill">Strategic advisory</span>
+              <span class="pill">Go-to-market</span>
+              <span class="pill">Ecosystem partnerships</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Selected impact</h2>
+        <div class="content-grid">
+          <article class="card">
+            <h2>Innovation ecosystems</h2>
+            <p>
+              Built collaborative programs that unite research institutions, startups,
+              and public-sector stakeholders around shared innovation challenges.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Breakthrough insights</h2>
+            <p>
+              Delivered research narratives that shape product strategy, policy decisions,
+              and executive alignment for complex initiatives.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Leadership development</h2>
+            <p>
+              Coached leaders to navigate transformation while strengthening organizational
+              capability and stakeholder trust.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">How I collaborate</h2>
+        <div class="callout">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-            enim in eros elementum tristique.
+            I work with executive teams and innovation leaders who need a trusted partner
+            to clarify priorities, mobilize teams, and translate ambitious ideas into
+            measurable outcomes. Each engagement blends evidence-based research, hands-on
+            facilitation, and strategic foresight to accelerate results.
           </p>
-        </article>
-        <article class="card">
-          <h2>Upcoming sessions</h2>
-          <p>
-            Placeholder text for dates, agendas, and links to add sessions when they are
-            scheduled.
-          </p>
-        </article>
-        <article class="card">
-          <h2>Resources</h2>
-          <p>
-            Add links to guides, slide decks, and recordings so learners can review
-            content between meetings.
-          </p>
-        </article>
+        </div>
+      </section>
+
+      <section id="connect">
+        <h2 class="section-title">Let’s connect</h2>
+        <div class="content-grid">
+          <article class="card">
+            <h2>Speaking & keynotes</h2>
+            <p>
+              Available for conferences, executive retreats, and workshops focused on
+              innovation, research strategy, and leadership growth.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Advisory engagements</h2>
+            <p>
+              Partner with me on short-term strategy sprints or longer-term advisory
+              relationships tailored to your organization’s goals.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Reach out</h2>
+            <p>
+              Share your goals and I will respond with a tailored proposal.
+            </p>
+            <p><strong>Email:</strong> hello@yourdomain.com</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>More details coming soon. Stay tuned for updates.</p>
+      <p>Focused on advancing research, mentoring leaders, and shaping future-ready strategies.</p>
     </footer>
   </body>
 </html>
