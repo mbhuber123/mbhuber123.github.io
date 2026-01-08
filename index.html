@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CATT Codex training</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8f7f4;
+        --text: #1b1b1b;
+        --muted: #4b5563;
+        --accent: #2257ff;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 2.5rem 1.5rem 2rem;
+        background: linear-gradient(135deg, #eef1ff, #f8f7f4 70%);
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 3vw, 3rem);
+        margin: 0;
+      }
+
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+
+      .hero a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .content-grid {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: var(--card);
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+      }
+
+      .card h2 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-size: 1.2rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem 3rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <main class="hero">
+        <p>Welcome to the training hub</p>
+        <h1>CATT Codex training</h1>
+        <p>
+          This is a simple, focused landing page for the CATT Codex training program.
+          Replace the placeholder text below with details about sessions, curriculum,
+          and resources as they become available.
+        </p>
+        <a href="#overview">View the overview</a>
+      </main>
+    </header>
+
+    <main>
+      <section id="overview" class="content-grid">
+        <article class="card">
+          <h2>Training overview</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+            enim in eros elementum tristique.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Upcoming sessions</h2>
+          <p>
+            Placeholder text for dates, agendas, and links to add sessions when they are
+            scheduled.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Resources</h2>
+          <p>
+            Add links to guides, slide decks, and recordings so learners can review
+            content between meetings.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>More details coming soon. Stay tuned for updates.</p>
+    </footer>
+  </body>
+</html>
